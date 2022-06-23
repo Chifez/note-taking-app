@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100vw;
+  height: auto;
+  background-color: lightgray;
+}
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sidebar {
+  width: 35%;
+  height: 100vh;
+  border: 1px solid black;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  cursor: pointer;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+.sidebar header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 18px 0px;
+}
+header h3 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+button {
+  font-size: 0.9rem;
+  font-weight: bolder;
+  padding: 5px 7px;
+  border: transparent;
+  border-radius: 2px;
+}
+.sidebar-header button {
+  width: 95%;
+  background-color: green;
+  color: white;
+  margin: 10px;
+}
+
+.sidebar-header h4 {
+  font-family: sans-serif;
+  margin: 3px;
+  font-size: 1.2rem;
+}
+.empty-note-list {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-note-list p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.empty-note-list p .no-note {
+  height: 100%;
+}
+
+.note-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  margin: 10px 0px;
+  padding: 15px 5px;
+}
+.note-list:hover {
+  background-color: skyblue;
+  transition: 0.7s ease;
+}
+.active {
+  background-color: steelblue;
+}
+.active:hover {
+  background-color: steelblue;
+}
+.note-list h3 {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.note-list p {
+  font-family: serif;
+}
+
+.note-list button {
+  color: white;
+  background: crimson;
+}
+.mainbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.inputbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  background-color: white;
+}
+.inputbar input {
+  height: 7vh;
+  padding: 5px;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+.inputbar input:focus {
+  outline-color: lightblue;
+}
+.inputbar textarea {
+  height: 43vh;
+  font-size: 0.9rem;
+  padding-left: 2px;
+  resize: none;
+}
+.inputbar .no-notes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.no-notes p {
+  font-size: 1rem;
+  font-style: italic;
+  font-family: sans-serif;
+}
+.preview-item {
+  height: calc(50vh - 15px);
+  background-color: white;
+  margin-top: 5px;
+}
+
+.preview-item h3 {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+  height: 7vh;
+  padding: 10px;
+}
+.preview-body {
+  font-family: sans-serif;
+  padding: 10px;
+}
