@@ -5,7 +5,7 @@ import Sidebar from "./components/sidebar/sidebar.js";
 import MainBar from "./components/mainbar/mainbar.js";
 
 function App() {
-  const [notes, setNotes] = useState(JSON.parse(localStorage.notes) || []);
+  const [notes, setNotes] = useState([]);
   const [activeNote, setActiveNote] = useState();
   
   useEffect(() => {
