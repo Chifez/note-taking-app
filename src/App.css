@@ -165,3 +165,48 @@ button {
   font-family: sans-serif;
   padding: 10px;
 }
+
+@media screen and (max-width:767px){
+  .sidebar {
+    width: 50%;
+  }
+
+  header h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .sidebar-header h4 {
+    font-family: sans-serif;
+    margin: 3px;
+    font-size: 1rem;
+  }
+
+  .empty-note-list p {
+    font-size: 1rem;
+  }
+
+  .note-list h3 {
+    font-size: 0.9rem;
+  }
+
+  .note-list p {
+    width:100%;
+    word-break: break-word;
+    font-size: 0.8rem;
+  }
+  .note-list button {
+    font-size: 0.7rem;
+    padding: 3px 5px;
+  }
+
+  .mainbar {
+    width: 50%;
+  }
+
+  .preview-body {
+   word-break: break-all;
+  }
+  
+
+}
